@@ -10,6 +10,17 @@
     font-style:normal;
 }
 
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+        url("../fonts/websymbols-regular-webfont.eot");
+    src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("../fonts/websymbols-regular-webfont.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -51,6 +62,12 @@ li{
 a{
     color: green;
     text-decoration: none;
+}
+.icon{
+    font-family: "icons";
+    float:left;
+    margin-right: 5px;
+    margin-top: -2px;
 }
 
 .navbar{
@@ -199,6 +216,10 @@ a{
 footer{
     background-color: #24262b;
     padding: 70px 0px;
+}
+.copy{
+    color: #fff;
+    text-align: center;
 }
 .footer{
     max-width: 1170px;
@@ -497,23 +518,122 @@ ul{
     margin: 0 0 1rem 0;
 }
 /*---------------------------Estilos de novedades------------------------*/
-.cards-wrapper{
-    display: flex;
-}
 .card{
-    margin: 0 .5em;
-    width: calc(100%/3);
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+.card-body{
+    border-top: 1px solid lightgray;
+}
+.carousel-inner{
+    padding: 1em;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: gray;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.image-wrapper{
-    height: 22vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.carousel-control-prev span,
+.carousel-control-next span {
+    width: 1.5rem;
+    height: 1.5rem;
+
 }
-.image-wrapper img{
-    max-width: 100%;
-    max-height: 100%;
+
+@media screen and (min-width: 568px) {
+    .carousel{
+        width: 80%;
+        margin: 20px auto auto auto;
+    }
+    .cards-wrapper{
+        display: flex;
+    }
+    .card{
+        margin: 0 .5em;
+        width: calc(100%/3);
+    }
+    
+    .image-wrapper{
+        height: 22vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-wrapper img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+@media screen and (max-width: 567px) {
+    .carousel{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .card:not(:first-child){
+        display: none;
+    }
+    .image-wrapper{
+        margin: 0 auto;
+    }
+}
+
+.seccion_noticias{
+    display: flex;
+    width: 77%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.seccion_noticias .titulo{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.seccion_noticias section{
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333; 
+    font-size: 16px;
+    overflow: hidden;
+}
+.seccion_noticias .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.seccion_noticias .date{
+    color: grey;
+    font-size: 14px;
+}
+
+.seccion_noticias .sticker1,
+.seccion_noticias .sticker2{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+.seccion_noticias .sticker1{
+    margin-left: 0%;
+}
+.seccion_noticias .sticker2{
+    margin-left: 70%;
+}
+#history{
+    margin-top: 20px;
+    margin-right: 20px;
 }
 /*-----------------RESPONSIVE-------------------------------------------*/
 
