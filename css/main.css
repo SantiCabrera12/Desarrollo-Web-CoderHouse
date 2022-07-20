@@ -10,6 +10,17 @@
     font-style:normal;
 }
 
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+        url("../fonts/websymbols-regular-webfont.eot");
+    src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("../fonts/websymbols-regular-webfont.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -51,6 +62,12 @@ li{
 a{
     color: green;
     text-decoration: none;
+}
+.icon{
+    font-family: "icons";
+    float:left;
+    margin-right: 5px;
+    margin-top: -2px;
 }
 
 .navbar{
@@ -199,6 +216,10 @@ a{
 footer{
     background-color: #24262b;
     padding: 70px 0px;
+}
+.copy{
+    color: #fff;
+    text-align: center;
 }
 .footer{
     max-width: 1170px;
@@ -559,6 +580,60 @@ ul{
     .image-wrapper{
         margin: 0 auto;
     }
+}
+
+.seccion_noticias{
+    display: flex;
+    width: 77%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.seccion_noticias .titulo{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.seccion_noticias section{
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333; 
+    font-size: 16px;
+    overflow: hidden;
+}
+.seccion_noticias .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.seccion_noticias .date{
+    color: grey;
+    font-size: 14px;
+}
+
+.seccion_noticias .sticker1,
+.seccion_noticias .sticker2{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+.seccion_noticias .sticker1{
+    margin-left: 0%;
+}
+.seccion_noticias .sticker2{
+    margin-left: 70%;
+}
+#history{
+    margin-top: 20px;
+    margin-right: 20px;
 }
 /*-----------------RESPONSIVE-------------------------------------------*/
 
