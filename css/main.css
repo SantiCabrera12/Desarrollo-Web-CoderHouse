@@ -2,10 +2,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @font-face {
+<<<<<<< HEAD
   font-family: "WebSymbols-Regular";
   src: url("../fonts/websymbols-regular-webfont.eot") format("eot"), url("../fonts/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols-regular-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
+=======
+    font-family:"WebSymbols-Regular";
+    src:url("../fonts/websymbols-regular-webfont.eot") format("eot"),
+    url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("../fonts/websymbols-regular-webfont.ttf") format("truetype"),
+    url("../fonts/websymbols-regular-webfont.svg") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+        url("../fonts/websymbols-regular-webfont.eot");
+    src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("../fonts/websymbols-regular-webfont.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+>>>>>>> 040a3da91a5c9cb0dec6525357bf7c89fe9b98c9
 
 /*KEY FRAMES*/
 @keyframes gradient {
@@ -17,6 +43,7 @@
     background-position: 0% 50%; } }
 
 /*ESTILOS CSS*/
+<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
@@ -82,6 +109,100 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: green; }
+=======
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background: #ffff;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+.icon{
+    font-family: "icons";
+    float:left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.navbar{
+    height: 80px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px; 
+    width: 100%;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1);
+}
+
+
+
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    gap: 60px;  
+}
+
+.nav-branding{
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav-link::after{
+    content: '';
+    display: block;
+    background: rgb(1,68,1);
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path 0.5s;
+}
+
+.nav-link:hover{
+    --clippy: polygon(0 0, 100% 0 , 100% 100%, 0 100%)
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: green;
+}
+
+
+
+
+>>>>>>> 040a3da91a5c9cb0dec6525357bf7c89fe9b98c9
 
 /*--------------------------Menu principal----------------------------*/
 .menu {
@@ -155,6 +276,7 @@ a {
   transform: scale(1.2, 1.2); }
 
 /*-------------------FOOTER------------------*/
+<<<<<<< HEAD
 footer {
   background-color: #24262b;
   padding: 70px 0px; }
@@ -247,6 +369,118 @@ ul {
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500; }
+=======
+footer{
+    background-color: #24262b;
+    padding: 70px 0px;
+}
+.copy{
+    color: #fff;
+    text-align: center;
+}
+.footer{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 100%;
+}
+
+
+.container__col{
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.container__col h4{
+    font-size: 1rem;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container__col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: green;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.container__col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+ul{
+    list-style: none;
+}
+.container__col ul li a{
+    font-size: 1rem;
+    margin: 5px;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.container__col ul li a:hover{
+    color: #ffff;
+    padding-left: 8px;
+}
+  
+
+.container__col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255,255,255,0.2);
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffff;
+    transition: all 0.5s ease;
+}
+
+.container__col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffff;
+}
+
+
+.location{
+    margin-top: 3rem ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.location h4{
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #ffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    
+}
+
+>>>>>>> 040a3da91a5c9cb0dec6525357bf7c89fe9b98c9
 
 /*------------------------MENU DE CAFE--------------*/
 .menu__container {
@@ -410,12 +644,133 @@ ul {
   margin: 0 0 1rem 0; }
 
 /*---------------------------Estilos de novedades------------------------*/
+<<<<<<< HEAD
 .cards-wrapper {
   display: flex; }
 
 .card {
   margin: 0 .5em;
   width: calc(100%/3); }
+=======
+.card{
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+.card-body{
+    border-top: 1px solid lightgray;
+}
+.carousel-inner{
+    padding: 1em;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: gray;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+
+@media screen and (min-width: 568px) {
+    .carousel{
+        width: 80%;
+        margin: 20px auto auto auto;
+    }
+    .cards-wrapper{
+        display: flex;
+    }
+    .card{
+        margin: 0 .5em;
+        width: calc(100%/3);
+    }
+    
+    .image-wrapper{
+        height: 22vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-wrapper img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+@media screen and (max-width: 567px) {
+    .carousel{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .card:not(:first-child){
+        display: none;
+    }
+    .image-wrapper{
+        margin: 0 auto;
+    }
+}
+
+.seccion_noticias{
+    display: flex;
+    width: 77%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.seccion_noticias .titulo{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.seccion_noticias section{
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333; 
+    font-size: 16px;
+    overflow: hidden;
+}
+.seccion_noticias .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.seccion_noticias .date{
+    color: grey;
+    font-size: 14px;
+}
+
+.seccion_noticias .sticker1,
+.seccion_noticias .sticker2{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+.seccion_noticias .sticker1{
+    margin-left: 0%;
+}
+.seccion_noticias .sticker2{
+    margin-left: 70%;
+}
+#history{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+/*-----------------RESPONSIVE-------------------------------------------*/
+>>>>>>> 040a3da91a5c9cb0dec6525357bf7c89fe9b98c9
 
 .image-wrapper {
   height: 22vw;
