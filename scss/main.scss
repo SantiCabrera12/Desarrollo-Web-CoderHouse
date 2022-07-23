@@ -53,7 +53,7 @@ a{
     text-decoration: none;
 }
 
-.navbar{
+.header__nav{
     height: 80px;
     position: sticky;
     top: 0;
@@ -67,22 +67,22 @@ a{
 
 
 
-.nav-menu{
+.header__menu{
     display: flex;
     justify-content: space-evenly;
     align-self: center;
     gap: 60px;  
 }
 
-.nav-branding{
+.header__branding{
     font-size: 1.5rem;
 }
 
-.nav-link{
+.menu__link{
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
-.nav-link::after{
+.menu__link::after{
     content: '';
     display: block;
     background: rgb(1,68,1);
@@ -93,11 +93,11 @@ a{
     transition: clip-path 0.5s;
 }
 
-.nav-link:hover{
+.menu__link:hover{
     --clippy: polygon(0 0, 100% 0 , 100% 100%, 0 100%)
 }
 
-.hamburger{
+.header__hamburger{
     display: none;
     cursor: pointer;
 }
@@ -262,7 +262,7 @@ ul{
 }
   
 
-.container__col .social-links a{
+.container__col .container__socialLinks a{
     display: inline-block;
     height: 40px;
     width: 40px;
@@ -275,13 +275,13 @@ ul{
     transition: all 0.5s ease;
 }
 
-.container__col .social-links a:hover{
+.container__col .container__socialLinks a:hover{
     color: #24262b;
     background-color: #ffff;
 }
 
 
-.location{
+.container__location{
     margin-top: 3rem ;
     width: 100%;
     display: flex;
@@ -290,7 +290,7 @@ ul{
     align-items: center;
 }
 
-.location h4{
+.container__location h4{
     text-align: center;
     font-size: 25px;
     text-transform: capitalize;
@@ -552,18 +552,18 @@ ul{
         top: 0;
         z-index: 2;
     }
-    .hamburger{
+    .header__hamburger{
         display: block;
     }
 
-    .hamburger.active .bar:nth-child(2){
+    .header__hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
 
-    .hamburger.active .bar:nth-child(1){
+    .header__hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+    .header__hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
 
@@ -585,7 +585,7 @@ ul{
         color: lightgreen;
     }
 
-    .nav-item{
+    .menu__item{
         margin: 16px 0;
     }
 
