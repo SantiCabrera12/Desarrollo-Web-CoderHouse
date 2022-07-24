@@ -17,9 +17,9 @@
     "url": "https://github.com/SantiCabrera12/Desarrollo-Web-CoderHouse/issues"
   },
   "homepage": "https://github.com/SantiCabrera12/Desarrollo-Web-CoderHouse#readme",
-  "description": "",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
-  }
+  },
+  "description": ""
 }
