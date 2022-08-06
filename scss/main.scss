@@ -1,5 +1,4 @@
 /*--------Reset Bootstrap---------*/
---bs-link-hover-color {color: green;}
 :root{
   --bs-link-hover-color: green;
   --bs-body-font-family: "san-serif"
@@ -84,6 +83,7 @@ header {
 }
 ul{
   margin-bottom: 0px;
+  padding-left: 0;
 }
 
 li {
@@ -524,7 +524,7 @@ footer {
 
 .seccion_noticias {
   width: 77%;
-  @include flexible(flex, column, wrap, center, center);
+  @include flexible(flex, column, wrap, center, none);
   margin: 20px auto;
   section {
     margin-top: 40px;
@@ -574,7 +574,159 @@ footer {
   }
 }
 
+/*---------------------------------Estilos de Login----------------------*/
+.login-container{
+  height: 43.75em;
+  width: 60em;
+  margin: 6em auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  .login-info-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: #DDE8F0;
+      & > p{
+        font-size:  1.25em;
+        margin-top: 1.5em;
+      }
+      .title{
+        text-transform: capitalize;
+        font-size: 2.25rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #018ABD;
+      }
+      .social-login{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+        padding-top: 1rem;
+        .social-login-element{
+            width: 12.5rem;
+            height: 3.75rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid  #018ABD; 
+            transition: all 0.3s ease;
+            & img{
+              width: 1.875rem;
+              height: 1.875rem;
+              position: relative;
+              top: 0;
+              left: -0.625rem;
+            }
+            &:hover{
+              background-color: #97CBDC;
+            }
+        }
+      }
+      .inputs-container{
+        height: 55%;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        & .input, & .btn{
+          width: 90%;
+          height: 3.125rem;
+          font-size:  1em;
+        }
+        & .input{
+          padding-left: 20px;
+          border: none;
+          border-radius: 5px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          transition: all 0.1s ease;
+          &:hover{
+            border: 2px solid #018ABD;
+          }
+        }
+        & .btn{
+          width: 80%;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #fff;
+          border-radius: 5px;
+          background-color: #018ABD;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          border: none;
+          border-radius: 5px;
+          &:hover{
+            box-shadow: 0px 0px 2px grey ;
+          }
+        }
+        & p{
+          margin: 0;
+        }
+        & .span{
+          color: #018ABD;
+          font-weight: 600;
+          cursor: pointer;
+        }
+      }
+  }
+  .image-container{
+    width: 50%;
+    padding: 2rem;
+    background-color:#5dade2;
+  }
+}
+
 /*-----------------RESPONSIVE-------------------------------------------*/
+/*------------------Responsive Login---------------*/
+@media screen and (max-width: 1000px) {
+  .login-container{
+    width: 70%;
+    margin-top: 3rem;
+    .login-info-container{
+      width: 100%;
+      border-radius: 5px;
+    }
+    .image-container{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 650px){
+  .login-container{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .login-container{
+    height: 90%;
+    .login-info-container{
+      & > p{
+        margin: 0;
+      }
+      .social-login{
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+        &-element{
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 568px) {
   .carousel {
     .cards-wrapper {
