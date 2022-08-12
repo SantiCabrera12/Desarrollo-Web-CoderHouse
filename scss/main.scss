@@ -346,7 +346,7 @@ footer {
         position: relative;
         width: 225px;
         height: 225px;
-        background: url(../multimedia/img/fondo-frappuccino.jpg) center
+        background: url(../multimedia/img/carta-frappuccino.jpg) center
           no-repeat;
         background-size: cover;
         border-radius: 20px;
@@ -411,7 +411,27 @@ footer {
   }
 }
 
-/*CSS PARA CARTAS*/
+/*FONDO PARA CARTAS*/
+#frappuccino{
+  background: url(../multimedia/img/carta-frappuccino.jpeg) center no-repeat;
+  background-size: cover;
+}
+#caramel-frappuccino{
+  background: url(../multimedia/img/carta-caramel-frappuccino.jpg) center no-repeat;
+  background-size: cover;
+}
+#mocha-blanco{
+  background: url(../multimedia/img/carta-mocha-blanco.jpg) center no-repeat;
+  background-size: cover;
+}
+#mocha-frappuccino{
+  background: url(../multimedia/img/carta-mocha.jpg) center no-repeat;
+  background-size: cover;
+}
+#chai-frappuccino{
+  background: url(../multimedia/img/carta-chai-frappuccino.jpg) center no-repeat;
+  background-size: cover;
+}
 
 /*-------------------Estilos de la pagina de contacto------------*/
 .container-contact {
@@ -591,7 +611,7 @@ footer {
     align-items: center;
     text-align: center;
     padding-top: 0.5rem;
-    background-color: #DDE8F0;
+    background-color: #a9e159;
       & > p{
         font-size:  1.25em;
         margin-top: 1.5em;
@@ -601,7 +621,7 @@ footer {
         font-size: 2.25rem;
         font-weight: 600;
         letter-spacing: 1px;
-        color: #018ABD;
+        color: #006414;
       }
       .social-login{
         width: 100%;
@@ -619,7 +639,7 @@ footer {
             justify-content: center;
             align-items: center;
             border-radius: 5px;
-            border: 1px solid  #018ABD; 
+            border: 1px solid  #66c00b; 
             transition: all 0.3s ease;
             & img{
               width: 1.875rem;
@@ -629,7 +649,7 @@ footer {
               left: -0.625rem;
             }
             &:hover{
-              background-color: #97CBDC;
+              background-color: #98ff96;
             }
         }
       }
@@ -653,7 +673,7 @@ footer {
           letter-spacing: 1px;
           transition: all 0.1s ease;
           &:hover{
-            border: 2px solid #018ABD;
+            border: 2px solid #72cb10;
           }
         }
         & .btn{
@@ -662,7 +682,7 @@ footer {
           text-transform: uppercase;
           color: #fff;
           border-radius: 5px;
-          background-color: #018ABD;
+          background-color: #5ab507;
           cursor: pointer;
           transition: all 0.3s ease;
           border: none;
@@ -675,7 +695,7 @@ footer {
           margin: 0;
         }
         & .span{
-          color: #018ABD;
+          color: #5ab507;
           font-weight: 600;
           cursor: pointer;
         }
@@ -684,7 +704,7 @@ footer {
   .image-container{
     width: 50%;
     padding: 2rem;
-    background-color:#5dade2;
+    background-color:#72cb10;
   }
 }
 
