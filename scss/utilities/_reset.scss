@@ -1,0 +1,33 @@
+:root{
+    --bs-link-hover-color: green;
+    --bs-body-font-family: "san-serif"
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background: #ffff;
+    width: 100%;
+  }
+  ul{
+    margin-bottom: 0px;
+    padding-left: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: map-get($map: $colores, $key:link-header );
+    text-decoration: none;
+  }
+  .icon {
+    font-family: "icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+  }

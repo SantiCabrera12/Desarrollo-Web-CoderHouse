@@ -1,12 +1,7 @@
 /*--------Reset Bootstrap---------*/
+/*Fuentes*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-:root {
-  --bs-link-hover-color: green;
-  --bs-body-font-family: "san-serif"
-; }
-
-/*Fuentes*/
 @font-face {
   font-family: "WebSymbols-Regular";
   src: url("../fonts/websymbols-regular-webfont.eot") format("eot"), url("../fonts/websymbols-regular-webfont.woff") format("woff"), url("../fonts/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/websymbols-regular-webfont.svg") format("svg");
@@ -29,8 +24,12 @@
   100% {
     background-position: 0% 50%; } }
 
-/*----------------------Variables y mixins---------------------*/
 /*ESTILOS CSS*/
+:root {
+  --bs-link-hover-color: green;
+  --bs-body-font-family: "san-serif"
+  ; }
+
 * {
   padding: 0;
   margin: 0;
@@ -105,68 +104,6 @@ a {
     transition: all 0.3s ease-in-out;
     background: green; }
 
-/*--------------------------Menu principal----------------------------*/
-.menu {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: start;
-  align-items: center;
-  width: 100%; }
-  .menu__contenedor img {
-    width: 100%; }
-  .menu__contenedor {
-    display: flex;
-    width: 100%;
-    margin: 0rem 1rem 2rem 1rem; }
-    .menu__contenedor .contenedor {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      background-color: #f1f8f6; }
-      .menu__contenedor .contenedor button {
-        background: transparent;
-        padding: 10px;
-        border: 1px solid green;
-        border-radius: 50px;
-        font-weight: bold;
-        transition: all 0.3s ease; }
-        .menu__contenedor .contenedor button:hover {
-          transform: scale(1.2, 1.2); }
-      .menu__contenedor .contenedor__text {
-        margin: 5px;
-        color: green;
-        font-family: "Roboto", sans-serif;
-        font-size: 1rem;
-        text-align: center;
-        font-weight: bold; }
-      .menu__contenedor .contenedor__titulo {
-        height: 50%;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: flex-start;
-        align-items: center;
-        font-size: 1rem;
-        color: green; }
-        .menu__contenedor .contenedor__titulo h2 {
-          margin: 10px; }
-      .menu__contenedor .contenedor__boton {
-        height: 50%;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5px; }
-        .menu__contenedor .contenedor__boton p {
-          display: inline-block;
-          color: green;
-          font-size: 1rem;
-          text-transform: uppercase;
-          font-weight: bold;
-          margin: 10px; }
-
-/*-------------------FOOTER------------------*/
 footer {
   background-color: #24262b;
   padding: 70px 0px; }
@@ -247,7 +184,66 @@ footer {
     text-align: center;
     color: white; }
 
-/*------------------------MENU DE CAFE--------------*/
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  width: 100%; }
+  .menu__contenedor img {
+    width: 100%; }
+  .menu__contenedor {
+    display: flex;
+    width: 100%;
+    margin: 0rem 1rem 2rem 1rem; }
+    .menu__contenedor .contenedor {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      background-color: #f1f8f6; }
+      .menu__contenedor .contenedor button {
+        background: transparent;
+        padding: 10px;
+        border: 1px solid green;
+        border-radius: 50px;
+        font-weight: bold;
+        transition: all 0.3s ease; }
+        .menu__contenedor .contenedor button:hover {
+          transform: scale(1.2, 1.2); }
+      .menu__contenedor .contenedor__text {
+        margin: 5px;
+        color: green;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold; }
+      .menu__contenedor .contenedor__titulo {
+        height: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem;
+        color: green; }
+        .menu__contenedor .contenedor__titulo h2 {
+          margin: 10px; }
+      .menu__contenedor .contenedor__boton {
+        height: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px; }
+        .menu__contenedor .contenedor__boton p {
+          display: inline-block;
+          color: green;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin: 10px; }
+
 .menu__container {
   width: 90%;
   height: auto;
@@ -373,7 +369,6 @@ footer {
   background: url(../multimedia/img/carta-chocolate.jpg) center no-repeat;
   background-size: cover; }
 
-/*-------------------Estilos de la pagina de contacto------------*/
 .container-contact {
   max-width: 1170px;
   margin-left: auto;
@@ -430,7 +425,6 @@ footer {
         text-align: center;
         margin: 0 0 1rem 0; }
 
-/*---------------------------Estilos de novedades------------------------*/
 .carousel {
   width: 80%;
   margin: 20px auto auto auto; }
@@ -441,14 +435,7 @@ footer {
       border-radius: 0;
       box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); }
       .carousel-inner .card-body {
-        border-top: 1px solid lightgray;
-        /*  & .card_footer{
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: space-evenly;
-        } */ }
+        border-top: 1px solid lightgray; }
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -509,7 +496,6 @@ footer {
     margin-top: 20px;
     margin-right: 20px; }
 
-/*---------------------------------Estilos de Login----------------------*/
 .login-container {
   height: 43.75em;
   width: 60em;
@@ -527,7 +513,7 @@ footer {
     padding-top: 0.5rem;
     background-color: #a9e159; }
     .login-container .login-info-container > p {
-      font-size: 1.25em;
+      font-size: 1rem;
       margin-top: 1.5em; }
     .login-container .login-info-container .title {
       text-transform: capitalize;
@@ -544,14 +530,14 @@ footer {
       .login-container .login-info-container .social-login .social-login-element {
         width: 12.5rem;
         height: 3.75rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 700;
         letter-spacing: 0.5px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        border: 1px solid  #66c00b;
+        border: 1px solid #66c00b;
         transition: all 0.3s ease; }
         .login-container .login-info-container .social-login .social-login-element img {
           width: 1.875rem;
@@ -571,7 +557,7 @@ footer {
       .login-container .login-info-container .inputs-container .input, .login-container .login-info-container .inputs-container .btn {
         width: 90%;
         height: 3.125rem;
-        font-size: 1em; }
+        font-size: 1rem; }
       .login-container .login-info-container .inputs-container .input {
         padding-left: 20px;
         border: none;
@@ -602,11 +588,8 @@ footer {
         cursor: pointer; }
   .login-container .image-container {
     width: 50%;
-    padding: 2rem;
-    background-color: #72cb10; }
+    padding: 2rem; }
 
-/*-----------------RESPONSIVE-------------------------------------------*/
-/*------------------Responsive Login---------------*/
 @media screen and (max-width: 1000px) {
   .login-container {
     width: 70%;

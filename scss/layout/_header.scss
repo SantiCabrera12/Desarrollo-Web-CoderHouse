@@ -1,0 +1,51 @@
+/*-------------------header-------------------*/
+.header {
+    &__nav {
+      @include flexible(flex, row , wrap, space-between, center);
+      height: 80px;
+      position: sticky;
+      top: 0;
+      padding: 0 40px;
+      width: 100%;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    }
+    &__branding {
+      font-size: map-get($map: $fuentes, $key: big);
+    }
+    &__menu {
+      @include flexible(flex, row, wrap, space-evenly, center);
+      gap: 60px;
+      .menu {
+        &__link {
+          --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        }
+        &__link::after {
+          content: "";
+          display: block;
+          background: rgb(1, 68, 1);
+          width: 90%;
+          margin-top: 3px;
+          height: 3px;
+          clip-path: var(--clippy);
+          transition: clip-path 0.5s;
+        }
+        &__link:hover {
+          --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+    }
+    &__hamburger {
+      display: none;
+      cursor: pointer;
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background: map-get($map: $colores, $key:link-header );
+      }
+    }
+  }
+  

@@ -1,0 +1,24 @@
+$colores:(
+  "link-header": green,
+  "bg-footer": #24262b,
+  "login-cont-bg":#a9e159,
+  "login-title": #006414,
+  "border-login-element": #66c00b,
+  "hover-login":#98ff96,
+  "hover-input-log":#72cb10,
+  "btn-login":#5ab507
+);
+
+$fuentes:(
+  "title-log": 2.25rem,
+  "big": 1rem + (1rem / 2),
+  "normal": 1rem,
+  "small": 1rem - 4
+);
+
+@mixin flexible ($dis, $direction, $corte, $just, $align) {
+    display: $dis;
+    flex-flow: $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
