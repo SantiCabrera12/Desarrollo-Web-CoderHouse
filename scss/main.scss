@@ -335,7 +335,7 @@ footer {
       grid-template-columns: repeat(auto-fill, 225px);
       grid-gap: 20px;
       padding: 25px;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: flex-start;
       .carta {
         margin-bottom: 25px;
@@ -433,6 +433,28 @@ footer {
   background-size: cover;
 }
 
+#mocha-oreo{
+  background: url(../multimedia/img/carta-mocha-oreo.jpg) center no-repeat;
+  background-size: cover;
+}
+#latte-machiatto{
+  background: url(../multimedia/img/carta-latte-machiatto.jpg) center no-repeat;
+  background-size: cover;
+}
+#skinny-macchiatto{
+  background: url(../multimedia/img/skinny-macchiatto.jpg) center no-repeat;
+  background-size: cover;
+}
+
+#cold-brew{
+  background: url(../multimedia/img/carta-cold-brew.jpg) center no-repeat;
+  background-size: cover;
+}
+#chocolate-caliente{
+  background: url(../multimedia/img/carta-chocolate.jpg) center no-repeat;
+  background-size: cover;
+}
+
 /*-------------------Estilos de la pagina de contacto------------*/
 .container-contact {
   max-width: 1170px;
@@ -519,14 +541,18 @@ footer {
       box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
       &-body {
         border-top: 1px solid lightgray;
+       /*  & .card_footer{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-evenly;
+        } */
       }
     }
   }
 }
 
-/* .card-body{
-    border-top: 1px solid lightgray;
-} */
 .carousel-control-prev,
 .carousel-control-next {
   background-color: gray;
