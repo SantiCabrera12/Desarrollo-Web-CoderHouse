@@ -16,6 +16,24 @@
     .login-container{
       width: 90%;
     }
+
+    .menu {
+      &__contenedor {
+        flex-direction: column;
+        .contenedor {
+          &__text,
+          & button,
+          &__titulo,
+          &__boton {
+            display: none;
+          }
+          & img {
+            width: 90%;
+          }
+        }
+      }
+    }
+
   }
   
   @media screen and (max-width: 500px){
@@ -67,7 +85,7 @@
           margin: 0 auto;
         }
       }
-    }
+    }   
   }
   
   @media (min-width: 700px) {
@@ -89,11 +107,17 @@
   
   @media (max-width: 950px) {
     .contenedor {
-      &__titulo h2 {
-        font-size: map-get($map: $fuentes, $key:normal);
+      &__titulo h2:first-child {
+        display: none;
+      }
+      &__titulo h2{
+        font-size: map-get($map: $fuentes, $key:small );
       }
       &__boton p {
         font-size: map-get($map: $fuentes, $key:small);
+      }
+      &__boton button:nth-child(2){
+        display: none;
       }
     }
   }
@@ -144,22 +168,6 @@
         }
         &.active {
           left: 0;
-        }
-      }
-      .menu {
-        &__contenedor {
-          flex-direction: column;
-          .contenedor {
-            &__text,
-            & button,
-            &__titulo,
-            &__boton {
-              display: none;
-            }
-            & img {
-              width: 90%;
-            }
-          }
         }
       }
   

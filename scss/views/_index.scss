@@ -14,7 +14,7 @@
         background-color: #f1f8f6;
         & button {
           background: transparent;
-          padding: 10px;
+          padding: 6px;
           border: 1px solid map-get($map: $colores, $key:link-header );
           border-radius: 50px;
           font-weight: bold;
@@ -43,14 +43,14 @@
         &__boton {
           height: 50%;
           @include flexible(flex, column, wrap, space-around, center);
-          padding: 5px;
+          padding: 0px 5px 0px 5px;
           & p {
             display: inline-block;
             color: map-get($map: $colores, $key:link-header );
-            font-size: map-get($map: $fuentes, $key:normal);
+            font-size: map-get($map: $fuentes, $key:small);
             text-transform: uppercase;
             font-weight: bold;
-            margin: 10px;
+            margin: 5px;
           }
         }
       }

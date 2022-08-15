@@ -13,7 +13,7 @@ $fuentes:(
   "title-log": 2.25rem,
   "big": 1rem + (1rem / 2),
   "normal": 1rem,
-  "small": 1rem - 4
+  "small": 0.8rem 
 );
 
 @mixin flexible ($dis, $direction, $corte, $just, $align) {
