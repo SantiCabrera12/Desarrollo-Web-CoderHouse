@@ -588,7 +588,8 @@ footer {
         cursor: pointer; }
   .login-container .image-container {
     width: 50%;
-    padding: 2rem; }
+    padding: 2rem;
+    background-color: #72cb10; }
 
 @media screen and (max-width: 1000px) {
   .login-container {
