@@ -44,33 +44,58 @@
         </nav>
     </header>
         <!--Fin del header-->
-        <div class="login-container">
-          <div class="login-info-container">
-            <h1 class="title">Log in with</h1>
-            <div class="social-login">
-              <div class="social-login-element">
-                <img src="../multimedia/img/google.svg" alt="google-image">
-                <span>Google</span>
-              </div>
-              <div class="social-login-element">
-                <img src="../multimedia/img/facebook.svg" alt="facebook-image">
-                <span>Facebook</span>
+
+        <!--Inicio del login-->
+        <div class="body-login">
+          <div class="login-container" id="login-container">
+            <div class="form-container sign-up-container">
+              <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+              </form>
+            </div>
+            <div class="form-container sign-in-container">
+              <form action="#">
+                <h1>Sign In</h1>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Or use your account</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+              </form>
+            </div>
+            <div class="overlay-container">
+              <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                  <h1>Welcome Back!</h1>
+                  <p>To keep connected with us please login with your personal details</p>
+                  <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                  <h1>Hi There!</h1>
+                  <p>Enter your personal details to open an account with us</p>
+                  <button class="ghost" id="signUp">Sign Up</button>
+                </div>
               </div>
             </div>
-            <p>or</p>
-            <form class="inputs-container">
-              <input class="input" type="text" placeholder="Username">
-              <input class="input" type="password" placeholder="Password">
-              <p>Forgot Password? <span class="span">Click Here</span></p>
-              <input type="submit"  class="btn" value="Login">
-<!--               <button class="btn">Login</button> -->
-              <p>Don't have an account? <span class="span">Sign Up</span></p>
-            </form>
           </div>
-          <img class="image-container" src="../multimedia/img/login.svg" alt="login-image">
         </div>
-
-
+    
+        <!--Fin del login-->
 
 
         <!--Inicio del footer-->
