@@ -542,7 +542,7 @@ footer {
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-in;
-    border-color: red;
+    border-color: green;
     cursor: pointer; }
     .body-login button:active {
       transform: scale(0.95); }
@@ -550,7 +550,7 @@ footer {
       outline: none; }
   .body-login .ghost {
     background-color: transparent;
-    border-color: red; }
+    border-color: green; }
   .body-login form {
     background-color: #FFFFFF;
     display: flex;
@@ -583,7 +583,7 @@ footer {
       .body-login .login-container .form-container .social-container {
         margin: 20px 0; }
         .body-login .login-container .form-container .social-container a {
-          border: 1px solid red;
+          border: 1px solid green;
           border-radius: 50%;
           display: inline-flex;
           justify-content: center;
@@ -619,8 +619,8 @@ footer {
       z-index: 100; }
       .body-login .login-container .overlay-container .overlay {
         background: #F2eee3;
-        background: -webkit-linear-gradient(to right, #F2eee3, #e7d4c5);
-        background: linear-gradient(to right, #F2eee3, #e7d4c5);
+        /* background: rgb(1,177,33); */
+        background: linear-gradient(109.6deg, #d9fa9e 11.2%, #80fbae 91.1%);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 0 0;
