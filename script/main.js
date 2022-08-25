@@ -13,15 +13,39 @@ document.querySelectorAll(".menu__link").forEach(n => n.addEventListener("click"
 }))
 
 /*----------------Acciones de login--------------*/
-const signUpButton = document.querySelector("#signUp");
-const signInButton = document.querySelector("#signIn");
-const container = document.querySelector("#login-container");
+const container = document.querySelector(".container"),
+        pwShowHide  = document.querySelectorAll(".showHidePw"),
+        pwFields  = document.querySelectorAll(".password"),
+        signUp  = document.querySelector(".signup-link"),
+        login  = document.querySelector(".login-link");
+    
+
+        //Mostrar/ocultar contraseña e icono
+        pwShowHide.forEach(eyeIcon =>{
+            eyeIcon.addEventListener("click", ()=>{
+                pwFields.forEach(pwField =>{
+                    if(pwField.type === "password"){
+                        pwField.type = "text"
+
+                        pwShowHide.forEach(icon =>{
+                            icon.classList.replace("uil-eye-slash","uil-eye")
+                        })
+                    }else{
+                        pwField.type = "password"
+
+                        pwShowHide.forEach(icon =>{
+                            icon.classList.replace("uil-eye","uil-eye-slash")
+                        })
+                    }
+                })
+            })
+        })
 
 
-signUpButton.addEventListener("click",()=>{
-    container.classList.toggle("right-panel-active")
-});
-
-signInButton.addEventListener("click", () => {
-    container.classList.remove("right-panel-active")
-});
+        //Codigo para mostrar el formulario de registro 
+        signUp.addEventListener("click", ()=>{
+            container.classList.add("active")
+        })
+        login.addEventListener("click", ()=>{
+            container.classList.remove("active")
+        })
